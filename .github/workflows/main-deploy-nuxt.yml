@@ -1,4 +1,4 @@
-      - name: Nuxt3 to Github Pages
+- name: Nuxt3 to Github Pages
 # You may pin to the exact commit or the version.
 uses: khanshifaul/NuxtPagesAction@0.0.3
 with:
