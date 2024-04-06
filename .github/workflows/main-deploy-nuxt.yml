@@ -1,0 +1,11 @@
+      - name: Nuxt3 to Github Pages
+# You may pin to the exact commit or the version.
+uses: khanshifaul/NuxtPagesAction@0.0.3
+with:
+    username: D2theR 
+    reponame: D2theR
+    token: ${{ secrets.NUXT_KEY }}
+    # Your custom domain
+    # cname: # optional, default is none
+    # Use yarn to build
+    useyarn: true
