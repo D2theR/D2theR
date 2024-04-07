@@ -1,0 +1,5 @@
+{
+    "name": "D2theR Codespace",
+    "dockerFile": "Dockerfile" 
+    // Other configurations...
+ }
