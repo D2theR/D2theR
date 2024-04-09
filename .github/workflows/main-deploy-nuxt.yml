@@ -11,8 +11,8 @@ jobs:
         with:
           node-version: 20  # Adjust as needed
       - run: cd d2ther/ 
-      - run: yarn install # Or 'yarn install' if useyarn is true
-      - run: npx nuxi generate
+      # - run: yarn install # Or 'yarn install' if useyarn is true
+      # - run: npx nuxi generate
       - name: Deploy
         uses: khanshifaul/NuxtPagesAction@0.0.3
         with:
