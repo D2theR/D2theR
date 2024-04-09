@@ -1,0 +1,13 @@
+{
+    "storedefaults": [
+        {
+            "theme": "dark"
+        }
+    ],
+    "sections": [
+        {
+            "name": "About Me",
+            "articleText": "Building my first computer at 13 years old was the spark that ignited my life-long passion for technology and science... "
+        }
+    ]
+}
