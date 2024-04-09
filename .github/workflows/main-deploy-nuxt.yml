@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 20  # Adjust as needed
       - name: Change Working Directory
-        working-directory: ./d2ther
+        run: cd d2ther/
       - name: Deploy
         uses: khanshifaul/NuxtPagesAction@0.0.3
         with:
