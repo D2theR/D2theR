@@ -10,13 +10,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20  # Adjust as needed 
-          working-directory: ./d2ther
+          
       # - run: yarn install # Or 'yarn install' if useyarn is true
       # - run: npx nuxi generate
       - name: Deploy
         uses: khanshifaul/NuxtPagesAction@0.0.3
         with:
+          working-directory: ./d2ther
+          useyarn: true
           username: D2theR 
           reponame: D2theR
           token: ${{ secrets.NUXT_KEY }}
-          useyarn: true
+          
