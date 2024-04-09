@@ -11,7 +11,9 @@ jobs:
         with:
           node-version: 20  # Adjust as needed
       - name: Working Dir
-        run: pwd
+        run: |
+          pwd
+          ls -a
       - name: Deploy
         uses: khanshifaul/NuxtPagesAction@0.0.3
         with:
