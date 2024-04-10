@@ -41,8 +41,6 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-        shell: bash
-        working-directory: ./d2ther
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
