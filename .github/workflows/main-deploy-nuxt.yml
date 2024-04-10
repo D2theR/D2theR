@@ -14,7 +14,7 @@ jobs:
         uses: D2theR/NuxtPagesAction@main
         with:
           useyarn: true
-          preruncmd: cd ./d2ther
+          preruncmd: "cd ./d2ther"
           username: D2theR 
           reponame: D2theR
           token: ${{ secrets.NUXT_KEY }}
