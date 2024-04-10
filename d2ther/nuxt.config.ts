@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      baseURL: 'D2theR/',
+      baseURL: '/D2theR/',
       buildAssetsDir:'.'
     }
   },
