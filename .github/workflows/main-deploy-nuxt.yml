@@ -10,10 +10,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20  # Adjust as needed
-      - name: Change Working Directory
-        run: cd d2ther/
       - name: Deploy
-        uses: khanshifaul/NuxtPagesAction@0.0.3
+        uses: D2theR/NuxtPagesAction@0.0.3
         with:
           useyarn: true
           username: D2theR 
