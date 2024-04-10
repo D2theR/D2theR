@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import defaultSettings from "~/data/defaultsettings.json"
+import defaultSettings from "../data/defaultsettings.json"
 
 export const useAppSettings = defineStore('appSettings', () => {
   const settings = ref(defaultSettings)
