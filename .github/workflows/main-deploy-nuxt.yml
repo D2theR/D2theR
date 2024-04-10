@@ -5,6 +5,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./d2ther
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -14,7 +17,7 @@ jobs:
         uses: D2theR/NuxtPagesAction@main
         with:
           useyarn: true
-          preruncmd: "cd ./d2ther"
+          preruncmd: "ls -a"
           username: D2theR 
           reponame: D2theR
           token: ${{ secrets.NUXT_KEY }}
