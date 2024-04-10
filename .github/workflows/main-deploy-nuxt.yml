@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 20  # Adjust as needed
       - name: Deploy
-        uses: D2theR/NuxtPagesAction@0.0.3
+        uses: D2theR/NuxtPagesAction@latest
         with:
           useyarn: true
           username: D2theR 
