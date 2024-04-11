@@ -6,8 +6,11 @@
     ],
     "sections": [
         {
-            "name": "About Me",
+            "name": "Welcome! I'm Dan, nice to meet you!",
             "articleText": "Building my first computer at 13 years old was the spark that ignited my life-long passion for technology and science... "
         }
+    ],
+    "skills": [
+        
     ]
 }
