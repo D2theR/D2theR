@@ -1,24 +1,48 @@
 <template>
   <div class="container relative mt-3 mx-auto z-20"> <div class="grid grid-cols-12">
-    <div class="col-span-4 p-2 "></div>
-    <div class="col-span-4 p-2 rounded-lg bg-green-700 opacity-80">
-      <div class="h-48 w-48 rounded-full overflow-hidden">  
-        <img class="object-cover h-full w-full" src="~/public/greyling_crop.jpg"> 
-      </div>
-      <h2 class="text-xl font-bold dark:text-white mb-4">{{ as.settings.sections[0].name }}</h2>
-        <p>
-          {{ as.settings.sections[0].articleText }}
-        </p>
-    </div>
-    <div class="col-span-4 p-2 "></div>
+    <div class="col-span-2"></div>
+      <UCarousel
+        ref="carouselRef"
+        v-slot="{ item }"
+        :items="sections"
+        :ui="{ item: 'basis-full' }"
+        class="w-auto h-auto col-span-8 rounded-lg overflow-hidden"
+        arrows
+      >
+      <div class="p-2 text-center rounded-lg opacity-80">
+        <h2 class="text-xl font-bold dark:text-white mb-4">{{ item.name }}</h2>
+        <img :src="item.image" class="rounded-full" draggable="true">
+          <p>
+            {{ item.text }}
+          </p>
+        </div>
+      </UCarousel>
+      <div class="col-span-2"></div>
   </div>
 </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useAppSettings } from '~/stores/appSettings'
 
 const as = useAppSettings()
+const sections = as.settings.sections
+
+const carouselRef = ref()
+
+onMounted(() => {
+  setInterval(() => {
+    if (!carouselRef.value) return
+
+    if (carouselRef.value.page === carouselRef.value.pages) {
+      return carouselRef.value.select(0)
+    }
+
+    carouselRef.value.next()
+  }, 5000)
+})
+
+
 </script>
 
 <style scoped>

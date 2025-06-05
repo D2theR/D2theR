@@ -1,16 +1,258 @@
 {
-    "storedefaults": [
+    "settings": [
         {
             "theme": "dark"
         }
     ],
     "sections": [
+        {   
+            "name": "About Me",
+            "image":"/greyling_crop.jpg",
+            "msg": "Welcome! I'm Dan, nice to meet you!",
+            "text": "Building my first computer at 13 years old was the spark that ignited my life-long passion for technology and science... "
+        },
         {
-            "name": "Welcome! I'm Dan, nice to meet you!",
-            "articleText": "Building my first computer at 13 years old was the spark that ignited my life-long passion for technology and science... "
+            "name": "Hobbies & Life",
+            "image": "/mh_halloween.jpg",
+            "msg":"Music",
+            "text":"But every person possesses many stories and skills..."
         }
     ],
     "skills": [
-        
+        {
+        "type": "Front-End",
+        "icons": [
+            {
+            "name": "HTML",
+            "icon": "~/public/skills/html.svg"
+            },
+            {
+            "name": "TailwindCSS",
+            "icon": "~/public/skills/tailwindcss.svg"
+            },
+            {
+            "name": "Bootstrap",
+            "icon": "~/public/skills/bootstrap.svg"
+            },
+            {
+            "name": "JavaScript",
+            "icon": "~/public/skills/javascript.svg"
+            },
+            {
+            "name": "JSON",
+            "icon": "~/public/skills/json.svg"
+            },
+            {
+            "name": "JQuery",
+            "icon": "~/public/skills/jquery.svg"
+            },
+            {
+            "name": "VueJS",
+            "icon": "~/public/skills/vuejs.svg"
+            },
+            {
+            "name": "Nuxt",
+            "icon": "~/public/skills/nuxt.svg"
+            },
+            {
+            "name": "OWL (Odoo ERP)",
+            "icon": "~/public/skills/owl(odoo-erp).svg"
+            },
+            {
+            "name": "QWeb XML (Odoo)",
+            "icon": "~/public/skills/qweb-xml-(odoo).svg"
+            },
+            {
+            "name": "Django",
+            "icon": "~/public/skills/django.svg"
+            }
+        ]
+        },
+        {
+        "type": "Back-End",
+        "icons": [
+            {
+            "name": "NodeJS",
+            "icon": "~/public/skills/nodejs.svg"
+            },
+            {
+            "name": "Django REST Framework",
+            "icon": "~/public/skills/django-rest-framework.svg"
+            },
+            {
+            "name": "Odoo JSON/XML RPC",
+            "icon": "~/public/skills/odoo-json-xml-rpc.svg"
+            },
+            {
+            "name": "Flask",
+            "icon": "~/public/skills/flask.svg"
+            },
+            {
+            "name": "FastAPI",
+            "icon": "~/public/skills/fastapi.svg"
+            },
+            {
+            "name": "Python",
+            "icon": "~/public/skills/python.svg"
+            },
+            {
+            "name": "pandas",
+            "icon": "~/public/skills/pandas.svg"
+            },
+            {
+            "name": "openpyxl",
+            "icon": "~/public/skills/openpyxl.svg"
+            }
+        ]
+        },
+        {
+        "type": "Database Administration",
+        "icons": [
+            {
+            "name": "Microsoft Access",
+            "icon": "~/public/skills/microsoft-access.svg"
+            },
+            {
+            "name": "PostgreSQL",
+            "icon": "~/public/skills/postgresql.svg"
+            },
+            {
+            "name": "MySQL",
+            "icon": "~/public/skills/mysql.svg"
+            },
+            {
+            "name": "MSSQL",
+            "icon": "~/public/skills/mssql.svg"
+            },
+            {
+            "name": "MongoDB",
+            "icon": "~/public/skills/mongodb.svg"
+            },
+            {
+            "name": "InfluxDB",
+            "icon": "~/public/skills/influxdb.svg"
+            }
+        ]
+        },
+        {
+        "type": "DevOps",
+        "icons": [
+            {
+            "name": "Git",
+            "icon": "~/public/skills/git.svg"
+            },
+            {
+            "name": "GitHub",
+            "icon": "~/public/skills/github.svg"
+            },
+            {
+            "name": "GitHub Actions (CI/CD)",
+            "icon": "~/public/skills/github-actions(ci-cd).svg"
+            },
+            {
+            "name": "Bash",
+            "icon": "~/public/skills/bash.svg"
+            },
+            {
+            "name": "Powershell",
+            "icon": "~/public/skills/powershell.svg"
+            },
+            {
+            "name": "Docker",
+            "icon": "~/public/skills/docker.svg"
+            },
+            {
+            "name": "Kubernetes",
+            "icon": "~/public/skills/kubernetes.svg"
+            },
+            {
+            "name": "NGINX",
+            "icon": "~/public/skills/nginx.svg"
+            },
+            {
+            "name": "Google Cloud",
+            "icon": "~/public/skills/google-cloud.svg"
+            },
+            {
+            "name": "AWS",
+            "icon": "~/public/skills/aws.svg"
+            }
+        ]
+        },
+        {
+        "type": "IoT Integration",
+        "icons": [
+            {
+            "name": "Arduino",
+            "icon": "~/public/skills/arduino.svg"
+            },
+            {
+            "name": "ESP",
+            "icon": "~/public/skills/esp.svg"
+            },
+            {
+            "name": "Raspberry Pi",
+            "icon": "~/public/skills/raspberry-pi.svg"
+            },
+            {
+            "name": "MQTT",
+            "icon": "~/public/skills/mqtt.svg"
+            },
+            {
+            "name": "PySerial",
+            "icon": "~/public/skills/pyserial.svg"
+            },
+            {
+            "name": "Node-RED",
+            "icon": "~/public/skills/node-red.svg"
+            },
+            {
+            "name": "Universal Namespaces/ERP Integration",
+            "icon": "~/public/skills/universal namespaces/erp-integration.svg"
+            }
+        ]
+        },
+        {
+        "type": "Artifical Intelligence",
+        "icons": [
+            {
+            "name": "OpenAI (GPT)",
+            "icon": "~/public/skills/openai(gpt).svg"
+            },
+            {
+            "name": "Tensorflow",
+            "icon": "~/public/skills/tensorflow.svg"
+            },
+            {
+            "name": "PyTorch",
+            "icon": "~/public/skills/pytorch.svg"
+            },
+            {
+            "name": "OpenCV-Python",
+            "icon": "~/public/skills/opencv-python.svg"
+            }
+        ]
+        },
+        {
+        "type": "Other Skills",
+        "icons": [
+            {
+            "name": "Microsoft Office",
+            "icon": "~/public/skills/microsoft-office.svg"
+            },
+            {
+            "name": "Visio",
+            "icon": "~/public/skills/visio.svg"
+            },
+            {
+            "name": "Microsoft Access",
+            "icon": "~/public/skills/microsoft-access.svg"
+            },
+            {
+            "name": "VB/VBA",
+            "icon": "~/public/skills/vb/vba.svg"
+            }
+        ]
+        }
     ]
 }
