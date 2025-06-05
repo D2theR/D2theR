@@ -14,8 +14,8 @@ Hello, please check out my stuff!
 
 ### Open MES:
 - An open source Manufacturing Execution System (MES) platform for guiding small/medium size manufacturers in building, following, and migrating to an IIoT 4.0 business model.
-- Could potential runs on baremetal or simple hardware like Raspberry Pi's or small form factor PC's.
-- Uses Docker Compose, EMQX, InfluxDB, & Node-RED.
+- Could potentially run on baremetal or simple hardware like Raspberry Pi's or small form factor PC's.
+- Uses Docker Compose, HiveMQ, InfluxDB, & Node-RED.
 - Hardware/Software recommendations sections for data acquisition:
     - Raspberry Pi's
     - ESP Modules
