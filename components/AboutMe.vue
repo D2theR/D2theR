@@ -1,25 +1,19 @@
 <template>
-  <div class="container relative mt-3 mx-auto z-20"> <div class="grid grid-cols-12">
-    <div class="col-span-2"></div>
-      <UCarousel
-        ref="carouselRef"
-        v-slot="{ item }"
-        :items="sections"
-        :ui="{ item: 'basis-full' }"
-        class="w-auto h-auto col-span-8 rounded-lg overflow-hidden"
-        arrows
-      >
-      <div class="p-2 text-center rounded-lg opacity-80">
-        <h2 class="text-xl font-bold dark:text-white mb-4">{{ item.name }}</h2>
-        <img :src="item.image" class="rounded-full" draggable="true">
-          <p>
-            {{ item.text }}
-          </p>
+  <div class="container relative mt-3 mx-auto z-20">
+    <div class="grid grid-cols-12">
+      <div class="col-span-4"></div>
+      <UCarousel ref="carouselRef" v-slot="{ item }" :items="sections" :ui="{ item: 'basis-full' }"
+        class="w-auto h-auto col-span-4 rounded-lg overflow-hidden" arrows>
+        <div class="p-2 w-full text-center rounded-lg opacity-80">
+          <h2 class="text-xl font-bold dark:text-white mb-4">{{ item.name }}</h2>
+          <img :src="item.image" class="rounded-full mx-auto" draggable="true">
+          <p>{{ item.text }}</p>
         </div>
+
       </UCarousel>
-      <div class="col-span-2"></div>
+      <div class="col-span-4"></div>
+    </div>
   </div>
-</div>
 </template>
 
 <script setup lang="ts">
@@ -45,6 +39,4 @@ onMounted(() => {
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
